@@ -1,4 +1,4 @@
-let translateToSpanish = ()=>{
+let translateToFrench = ()=>{
     textToTranslate = document.getElementById("textToTranslate").value;
 
     let xhttp = new XMLHttpRequest();
@@ -7,7 +7,7 @@ let translateToSpanish = ()=>{
             document.getElementById("translated_text").innerHTML = xhttp.responseText;
         }
     };
-    xhttp.open("GET", "englishToSpanish?textToTranslate"+"="+textToTranslate, true);
+    xhttp.open("GET", "englishToFrench?textToTranslate"+"="+textToTranslate, true);
     xhttp.send();
 }
 
@@ -20,7 +20,7 @@ let translateToEnglish = ()=>{
             document.getElementById("translated_text").innerHTML = xhttp.responseText;
         }
     };
-    xhttp.open("GET", "spanishToEnglish?textToTranslate"+"="+textToTranslate, true);
+    xhttp.open("GET", "frenchToEnglish?textToTranslate"+"="+textToTranslate, true);
     xhttp.send();
 }
 
